@@ -13,52 +13,68 @@
 </head>
 <body>
   <div class="main-container">
-    <div class="top-container">
-      <img src="images/logo.svg" alt="Logo" class="logo">
 
-      <div class="properties">
-        <div class="dropdown">
-        <a href="#" class="link dropbtn">Features</a>
-        <div class="dropdown-content">
-          <div class="todo feature">
-            <img src="images/icon-todo.svg" alt="todo">
-            <a href="#">Todo List</a> 
-          </div> 
-          <div class="feature calendar ">
-            <img src="images/icon-calendar.svg" alt="todo">
-            <a href="#">Calendar</a>
+    <div class="top-container">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo">
+      </div>
+      <div class="main-properties">
+        <div class="properties">
+          <div class="dropdown">
+            <a href="#" class="link dropbtn1">Features<img src="" </a>
+            <div class="dropdown-content features">
+              <div class="todo feature">
+                <img src="images/icon-todo.svg" alt="todo">
+                <a href="#">Todo List</a> 
+              </div> 
+              <div class="feature calendar ">
+                <img src="images/icon-calendar.svg" alt="todo">
+                <a href="#">Calendar</a>
+              </div>
+              <div class="reminder feature">
+                <img src="images/icon-reminders.svg" alt="todo">
+                <a href="#">Reminders</a>
+              </div>
+              <div class="planning feature">
+                <img src="images/icon-planning.svg" alt="todo">
+                <a href="#">Planning</a>
+              </div>
+            </div>
+           
           </div>
-          <div class="reminder feature">
-            <img src="images/icon-reminders.svg" alt="todo">
-            <a href="#">Reminders</a>
+          <div class="dropdown">
+            <a href="#" class="link dropbtn2">Company</a>
+            <div class="dropdown-content company">
+              <a href="#">History</a>
+              <a href="#">OurTeam</a>
+              <a href="#">Blog</a>
+            </div>
           </div>
-          <div class="planning feature">
-            <img src="images/icon-planning.svg" alt="todo">
-            <a href="#">Planning</a>
-          </div>
+          <a href="#" class="link">Careers</a>
+          <a href="#" class="link">About</a>
+        </div>
+        <div class="registering">
+          <a href="#" class="link">Login</a>
+          <button class="register">Register</button>
         </div>
       </div>
-      <div class="dropdown">
-        <a href="#" class="link dropbtn">Company</a>
-        <div class="dropdown-content">
-          <a href="#">History</a>
-          <a href="#">Our Team</a>
-          <a href="#">Blog</a>
-        </div>
+      <div class="menu">
+        <button class="menu-button">
+          <img src="/images/icon-menu.svg" class="menu-icon">
+        </button>
+        <button class="close-button">
+         <img src="/images/icon-close-menu.svg" class="close-icon">
+        </button>
       </div>
-      <a href="#" class="link">Careers</a>
-      <a href="#" class="link">About</a>
-      <a href="#" class="link">Login</a>
-      <button class="register">Register</button>
     </div>
-      
-      <button class="menu-btn">
-        <!-- <img src="images/icon-menu.svg" alt="Menu" class="menu-icon"> -->
-      </button> 
-    </div>
+
     <div class="middle-container">
       <div class="hero-image">
-        <img src="images/image-hero-mobile.png" alt="Hero Image Mobile" class="hero-img-mobile">
+        <picture>
+          <source media="(min-width:768px)" srcset="/images/image-hero-desktop.png">
+          <source media="(max-width:767px)" srcset="/images/image-hero-mobile.png">
+          <img src="/images/image-hero-desktop.png">
+        </picture>
       </div>
       <div class="intro">
         <h1>Make remote work</h1>
@@ -81,5 +97,6 @@
       </div>
     </div>
   </div>
+  <script src="intro.js"></script>
 </body>
 </html>
