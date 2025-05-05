@@ -31,23 +31,34 @@ body{
 .logo img{
     width: 100%;
 }
-
 .main-properties{
     display: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.properties-container{
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 30px;
-
+    height: 100%;
+    width: 50%;
+    background-color: white;
 }
 
 .properties{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 40%;
+    width: 100%;
     gap: 20px;
+    margin-top: 40%;
 }
 .feature{
     display: flex;
@@ -62,7 +73,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 18%;
+    width: 100%;
 }
 .register-button{
     width: 70%;
@@ -97,6 +108,16 @@ body{
 }
 .dropdown:hover .dropdown-content {
     display: flex;
+}
+.close-button{
+    display: none;
+}
+.close-button, .menu-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: absolute;
+    z-index: 99
 }
 a{
     font-size: 10px;
@@ -170,6 +191,11 @@ a:hover{
     width: 100%;
     height: 100%;
 }
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (min-width: 768px){
     .logo{
@@ -192,6 +218,7 @@ a:hover{
     }
     .menu{
         display: none;
+
     }
     .middle-container{
         flex-direction: row-reverse;
