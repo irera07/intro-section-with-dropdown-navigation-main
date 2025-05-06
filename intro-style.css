@@ -48,9 +48,12 @@ body{
     align-items: flex-start;
     gap: 30px;
     height: 100%;
-    width: 50%;
+    width: 50% ;
     background-color: white;
+    transition: 1s ease-in-out;
+    transition-delay: 1s;
 }
+
 
 .properties{
     display: flex;
@@ -202,19 +205,37 @@ a:hover{
         width: 7%;
     }
     .main-properties{
+        justify-content: space-between;
         align-items: flex-start;
         display: flex;
         flex-direction: row;
         width: 90%;
+        height: 30px;
+        position: relative;
+        top: none;
+        right: none;
+    }
+    .properties-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+        height: 100%;
+        width: 100%;
+        background-color: hsl(0, 0%, 95%);;
     }
     .properties{
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
         gap: 0;
+        margin: 0;
+        width: 30%;
     }
     .registering{
         flex-direction: row;
+        width: 20%;
     }
     .menu{
         display: none;

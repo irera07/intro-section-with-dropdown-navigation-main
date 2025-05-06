@@ -13,3 +13,4 @@ closeButton.addEventListener('click', () => {
     menuButton.style.display = 'block'; 
     properties.style.display = 'none'
 });
+
